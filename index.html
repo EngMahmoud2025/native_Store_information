@@ -32,7 +32,13 @@
             gap: 20px;
         }
 
-        .logos img {
+        .logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-item img {
             width: 60px;
             height: 60px;
             border-radius: 12px;
@@ -41,13 +47,22 @@
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
 
-        .logos img:hover {
+        .logo-item img:hover {
             transform: scale(1.15);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
+        .logo-label {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Tahoma', sans-serif;
+        }
+
         a {
             text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -57,25 +72,42 @@
         <img src="native.jpg" alt="Native" class="main-image">
 
         <div class="logos">
-            <a href="https://www.instagram.com/native__41" target="_blank">
-                <img src="instgram.png" alt="Instagram">
-            </a>
 
-            <a href="https://maps.app.goo.gl/T4npFxmJW5xWNcne6" target="_blank">
-                <img src="map.png" alt="Google Maps">
-            </a>
+            <div class="logo-item">
+                <a href="https://www.instagram.com/native__41" target="_blank">
+                    <img src="instgram.png" alt="Instagram">
+                </a>
+                <div class="logo-label">Instagram</div>
+            </div>
 
-            <a href="https://www.tiktok.com/@native_411" target="_blank">
-                <img src="tiktok.png" alt="TikTok">
-            </a>
+            <div class="logo-item">
+                <a href="https://maps.app.goo.gl/T4npFxmJW5xWNcne6" target="_blank">
+                    <img src="map.png" alt="Google Maps">
+                </a>
+                <div class="logo-label">Google Maps</div>
+            </div>
 
-            <a href="https://ipn.eg/S/remonayman/instapay/4Omt0d" target="_blank">
-                <img src="instapay.jpeg" alt="InstaPay">
-            </a>
+            <div class="logo-item">
+                <a href="https://www.tiktok.com/@native_411" target="_blank">
+                    <img src="tiktok.png" alt="TikTok">
+                </a>
+                <div class="logo-label">TikTok</div>
+            </div>
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiJRnRI0bFIjv5rabw6JDWdHz6tDJR4PxfiXkExXLvxwSBrQ/viewform?usp=header" target="_blank">
-                <img src="google-forms.png" alt="Google Forms">
-            </a>
+            <div class="logo-item">
+                <a href="https://ipn.eg/S/remonayman/instapay/4Omt0d" target="_blank">
+                    <img src="instapay.jpeg" alt="InstaPay">
+                </a>
+                <div class="logo-label">InstaPay</div>
+            </div>
+
+            <div class="logo-item">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiJRnRI0bFIjv5rabw6JDWdHz6tDJR4PxfiXkExXLvxwSBrQ/viewform?usp=header" target="_blank">
+                    <img src="google-forms.png" alt="Google Forms">
+                </a>
+                <div class="logo-label">Feedback</div>
+            </div>
+
         </div>
     </div>
 
